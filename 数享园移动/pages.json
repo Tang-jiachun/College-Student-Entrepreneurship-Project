@@ -1,0 +1,146 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "数享园",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+            "path" : "pages/mine/mine",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/collection/collection",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "馆藏 分类",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/findings/findings",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发现",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+			"path": "pages/activity/activity",
+			"style": {
+				"navigationBarTitleText": "近期活动",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "pages/issue/issue",
+			"style": {
+				"navigationBarTitleText": "近期发行藏品",
+				"enablePullDownRefresh": false
+			}
+		}
+        ,{
+            "path" : "pages/history/history",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/architecture/architecture",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/campus/campus",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/art/art",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/digital/digital",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/UserInformation/UserInformation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#ffffff",
+		"tabBar": {
+		      "height": "220px"
+		    }
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#ccccc",
+		"selectedColor": "black",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/home/home",
+				"iconPath": "static/images/首页1.jpg",
+				"selectedIconPath": "static/images/首页2.jpg"
+			},
+			{
+				"text": "馆藏",
+				"pagePath": "pages/collection/collection",
+				"iconPath": "static/images/馆藏1.jpg",
+				"selectedIconPath": "static/images/馆藏2.jpg"
+			},
+			{
+				"text": "发现",
+				"pagePath": "pages/findings/findings",
+				"iconPath": "static/images/发现1.jpg",
+				"selectedIconPath": "static/images/发现2.jpg"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/images/我的1.jpg",
+				"selectedIconPath": "static/images/我的2.jpg"
+			}
+		]
+	}
+}
