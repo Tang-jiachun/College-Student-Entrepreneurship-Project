@@ -1,35 +1,42 @@
 <template>
   <view>
     <view class="toptabbar">
-      <image class="appimg" src="/static/images/appimg.jpg"></image>
-      <view class="apptext">数享园</view>
+      <image class="appimg" src="/static/images/logo.jpg"></image>
       <view class="tabbar" :class="{ active: activeTab === '首页' }" @click="activeTab = '首页'">首页</view>
-      <view class="tabbar" :class="{ active: activeTab === '馆藏' }" @click="activeTab = '馆藏'">馆藏</view>
       <view class="tabbar" :class="{ active: activeTab === '发现' }" @click="activeTab = '发现'">发现</view>
+	  <view class="tabbar" :class="{ active: activeTab === '分栏' }" @click="activeTab = '分栏'">分栏</view>
+      <view class="tabbar" :class="{ active: activeTab === '藏馆' }" @click="activeTab = '藏馆'">藏馆</view>
       <view class="tabbar" :class="{ active: activeTab === '我的' }" @click="activeTab = '我的'">我的</view>
+	  <view class="tabbar" :class="{ active: activeTab === '登录/注册' }" @click="activeTab = '登录/注册'">登录/注册</view>
     </view>
     <view>
       <Home v-if="activeTab === '首页'" />
-      <Collection v-if="activeTab === '馆藏'" />
       <Findings v-if="activeTab === '发现'" />
+	  <Column v-if="activeTab === '分栏'"/>
+      <Collection v-if="activeTab === '藏馆'" />
       <Myinformation v-if="activeTab === '我的'" />
+	  <LoginRegister v-if="activeTab === '登录/注册'"/>
     </view>
   </view>
 </template>
 
 <script>
 import Home from '@/components/Home/Home.vue';
-import Collection from '@/components/Collection/Collection.vue';
 import Findings from '@/components/Findings/Findings.vue';
+import Column from '@/components/Column/Column.vue';
+import Collection from '@/components/Collection/Collection.vue';
 import Myinformation from '@/components/Myinformation/Myinformation.vue';
+import LoginRegister from '@/components/LoginRegister/LoginRegister.vue';
 
 export default {
   name: "TopTabBar",
   components: {
     Home,
-    Collection,
     Findings,
-    Myinformation
+	Column,
+    Collection,
+    Myinformation,
+	LoginRegister,
   },
   data() {
     return {
@@ -61,10 +68,13 @@ export default {
 }
 
 .tabbar {
-  width: 400rpx;
+  width: 15%;  
   text-align: center;
   margin-left: 20rpx;
   position: relative;
+}
+.tabbar:hover {
+	color: #50cdfa;
 }
 
 .tabbar::after {
